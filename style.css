@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    text-transform: capitalize;
+}
+
+.header{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(1, 10, 109);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 6%;
+}
+
+#dora{
+    color:transparent;
+    background: linear-gradient(125deg,pink,rgb(139, 197, 249));
+    background-clip: text;
+}
+
+.header i{
+    color: white;
+    font-size: 24px;
+    display: none;
+}
+
+.header .links{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+}
+
+.header .links a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.header .links a::after{
+    content: "";
+    position:absolute;
+    left: 0px;
+    bottom: -8px;
+    width: 0;
+    height: 3px;
+    border-radius: 4px;
+    background-color: white;
+    transition: all ease-in 0.28s;
+}
+
+.header .links a:hover::after{
+    content: "";
+    position:absolute;
+    left: 0px;
+    bottom: -8px;
+    width: 100%;
+    height: 3px;
+    border-radius: 4px;
+    background-color: white;
+    transition: all ease-in 0.28s;
+}
+
+
+.header .links button{
+    padding: 10px 20px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    transition: all ease-in 0.28s;
+}
+
+.header .links button:hover{
+    background-color: white;
+    color:rgb(1, 10, 109) ;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    height: 550px;
+    margin: 20px 0;
+    padding:0px 6% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element{
+    height: 100%;
+    width: 50%;
+    line-height: 20px;
+}
+
+.container .element:nth-child(1){
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.element h1{
+    font-size: 35px;
+    color: rgb(1, 10, 109);
+}
+
+.element h2{
+    font-size: 24px;
+    color: rgb(1, 10, 109);
+}
+
+.element p{
+    font-size: 18px;
+    color: rgb(1, 10, 109);
+}
+
+
+
+.element button{
+    padding: 10px 20px;
+    background-color: transparent;
+    outline: none;
+    border-radius: 3px;
+    color: rgb(1, 10, 109);
+    border: 2px solid rgb(1, 10, 109);
+    transition: all ease-in 0.28s;
+}
+
+.element button:hover{
+    box-shadow: inset 150px 0px 0px rgb(1, 10, 109);
+    cursor: pointer;
+    color: white;
+}
+
+.container .element:nth-child(2){
+    background-image: url(https://www.pngplay.com/wp-content/uploads/10/Doraemon-Transparent-File.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-container{
+    height: 500px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0px 6%;
+    background-color: pink;
+}
+
+.card-container .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 28px;
+    color: rgb(1, 10, 109);
+}
+
+.card-layout .card p{
+    color:rgb(1, 10, 109) ;
+}
+.card-container .card-layout{
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-container .card-layout .card{
+    height: 300px;
+    width: 24%;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all ease-in 0.38s;
+}
+
+.card-container .card-layout .card:hover{
+    box-shadow: 4px 4px 36px rgba(1, 10, 109, 0.327);
+}
+
+.card-container .card-layout .card .icon{
+    height: 130px;
+    background-color:rgb(1, 10, 109) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container .card-layout .card h3{
+    text-align: center;
+    padding: 20px;
+}
+
+.card-container .card-layout .card p{
+    text-align: center;
+    padding: 10px;
+}
+
+.card-container .card-layout .card .icon i{
+    font-size: 48px;
+    color: white;
+    transition: all ease-in 0.38s;
+}
+
+.card-container .card-layout .card:hover .icon i{
+    transform: scale(1.5);
+}
+
+.about-container{
+    height: 1000px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0px 6%;
+}
+
+.about-container .title{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.about-container .title h1{
+    color:rgb(1, 10, 109);
+}
+
+.about-container .box{
+    height: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.about-container .box .about-content,.about-container .box .about-image{
+    height: 100%;
+    width: 50%;
+    gap: 20px;
+}
+
+.about-container .box .about-content{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-container .box .about-image{
+    background: url(https://www.pngplay.com/wp-content/uploads/10/Doraemon-Free-Picture-PNG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-container .box .about-content h2,h3,p{
+    color:rgb(1, 10, 109) ;
+}
+
+.about-container .box .about-content p{
+    line-height: 20px;
+}
+
+.contact-container{
+    height: 570px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0px 6%; 
+    background-color: pink; 
+}
+
+.contact-container .title{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container .title h1{
+    color: rgb(1, 10, 109);
+    letter-spacing: 1.5px;
+}
+
+.contact-container .form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 50px;
+}
+
+.form-container .content-image,.form-container form{
+    width: 50%;
+    height: 100%;
+}
+
+.form-container .content-image{
+    background: url('https://www.labsmartlis.com/images/contact_us_image.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form-container form{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    transition: all ease-in 0.35s;
+}
+
+.form-container .form-field{
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.form-container form:hover{
+    box-shadow: 4px 4px 36px rgba(1, 10, 109, 0.327);
+}
+
+.form-field label{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.form-field input{
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border:none;
+    border-bottom: 2px solid rgba(1, 10, 109, 0.558);
+    border-radius: 5px;
+    outline: none;
+    transition: all ease-in 0.28s;
+}
+
+.form-field input[type="button"]{
+    margin-top: 30px;
+    background-color: rgb(1, 10, 109);
+    color: white;
+    height: 40px;
+}
+
+.form-field input:hover[type="button"]{
+    margin-top: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-field input:focus{
+     border:none;
+     border-bottom: 2px solid rgb(1, 10, 109);
+}
+
+.footer-container{
+    height: 350px;
+    width: 100%;
+    margin-top:40px;
+    background-color: rgba(1, 10, 109, 0.847);
+}
+
+.footer-container .footer{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-container .copyright{
+    width: 100%;
+    height: 50px;
+}
+
+.footer-container .footer .card{
+    width: 25%;
+    height: 100%;
+    padding: 15px 25px;
+}
+
+.footer .card .card-title{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+}
+
+.card p{
+    color: white;
+}
+
+.card ul{
+    color: white;
+    padding-left: 20px;
+    transition: all ease-in 0.35s;
+}
+
+.card li{
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.card li:hover{
+    transform: translateX(20px);
+    font-weight: 600;
+}
+
+.card .footer-box{
+    width: 100%;
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.card .footer-box i{
+    font-size: 20px;
+    color: white;
+}
+
+.card form{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    padding: 20px;
+    border: 2px solid white;
+}
+.card .form-box label{
+    color: white;
+    margin-bottom: 8px;
+}
+
+.card .form-box input{
+    border-radius: 4px;
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.card .form-box input[type="button"]{
+   background-color: white;
+}
+
+.card .form-box input:hover[type="button"]{
+    color:rgb(1, 10, 109) ;
+    font-weight: 600;
+    cursor: pointer;
+ }
+
+ .footer-container .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(1, 10, 109) ;
+ }
+
+ .copyright p{
+    color: white;
+ }
+
+ .footer-box p{
+    text-transform: lowercase;
+ }

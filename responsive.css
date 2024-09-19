@@ -1,0 +1,82 @@
+@media screen and (max-width:600px){
+    .header{
+        position: relative;
+    }
+    .header .links{
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        bottom:-280px;
+        flex-direction: column;
+        background-color:rgb(1, 10, 109) ;
+        padding: 24px 0px;
+        display: none;
+    }
+    .header i{
+        display: block;
+    }  
+    .container{
+        height: 800px !important;
+        flex-direction: column-reverse;
+    }   
+    .container .element{
+        width: 90%;
+        height: 400px !important;
+    }
+    .card-container{
+        width: 100%;
+        height: auto !important;
+    }
+    .card-layout{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card-layout .card{
+        width: 90% !important;
+    }
+    .about-container {
+        height: auto !important;
+    }
+    .about-container .box:nth-child(even){
+        height: 900px !important;
+        flex-direction: column-reverse;
+    }
+    .about-container .about-content, .about-container .about-image{
+        width: 90% !important;
+        height: 450px;
+    }
+    .about-container .box:nth-child(odd){
+        height: 900px !important;
+        flex-direction: column;
+    }
+    .contact-container .content-image{
+        display: none;
+    }
+    .contact-container form{
+        width: 90% !important;
+    }
+    .footer-container{
+        width: 100%;
+        height: 650px !important;
+    }
+    .footer-container .footer{
+        height: 90%;
+        width: 90%;
+        flex-wrap: wrap;
+        padding: 0 !important;
+        gap: 1em;
+    }
+
+    .footer-container .footer .card{
+        width: 45%;
+        height: 100px !important;
+        padding: 0 !important;
+    }
+    .footer-container .copyright{
+        height:10% ;
+    }
+    .footer-container .footer .card-title h2{
+        font-size: 24px !important;
+        margin-bottom:10px;
+    }
+}
